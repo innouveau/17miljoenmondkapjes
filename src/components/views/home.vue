@@ -26,9 +26,10 @@
                         Helaas zijn mondkapjes schaars en moeten ze (natuurlijk) als eerste naar zorgpersoneel, maar het goede nieuws is:
                     </p>
                     <p>
-                        je kunt ze gewoon zelf maken! Kun je niet naaien? Ook dan kun
-                        je meehelpen om de mondkapjes te verspreiden. Bijvoorbeeld door s
-                        toffen bij de naai(st)ers te brengen, of de zelfgemaakte mondkapjes te verdelen.
+                        <span  class="highlight">Je kunt ze gewoon zelf maken!</span><br>
+                        Kun je niet naaien? Ook dan kun
+                        je meehelpen om de mondkapjes te verspreiden. Bijvoorbeeld door
+                        stoffen bij de naai(st)ers te brengen, of de zelfgemaakte mondkapjes te verdelen.
                     </p>
                     <p>
                         Samen gaan we ervoor zorgen dat iedereen in Nederland een
@@ -36,16 +37,14 @@
                         vrienden allemaal beschermd zijn tegen het coronavirus.
                     </p>
                     <p>
-                        17 miljoen mondkapjes, doe je mee?
+                        <span  class="highlight">17 miljoen mondkapjes</span>, doe je mee?
                     </p>
                 </div>
-               <sewers/>
+                <rules/>
+<!--               <sewers/>-->
             </div>
             <div class="section section--full">
                 <sign-up/>
-            </div>
-            <div class="section">
-                <rules/>
             </div>
         </div>
     </div>
@@ -57,36 +56,8 @@
 
     .home {
 
-        .section {
-            display: flex;
-            border-bottom: 1px dashed #aaa;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-
-            &.section--full {
-                display: block;
-
-                > div {
-                    width: 100%;
-                }
-            }
-
-            > div {
-                width: 50%;
-
-                &:first-child {
-                    padding-right: 10px;
-                }
-
-                &:last-child {
-                    padding-left: 10px;
-                }
-            }
-
-            .home__intro {
-                font-size: 16px;
-                font-weight: 700;
-            }
+        .home__intro {
+            font-size: 16px;
         }
     }
 </style>

@@ -56,12 +56,12 @@
 
             .identity__img-pattern {
                 position: absolute;
-                left: 377px;
-                top: 105px;
+                left: 277px;
+                top: 76px;
                 z-index: 0;
-                width: 174px;
+                width: 126px;
                 transform: rotate(-8deg);
-                height: 86px;
+                height: 63px;
             }
 
             .identity__img-main {

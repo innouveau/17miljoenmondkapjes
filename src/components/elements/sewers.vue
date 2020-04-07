@@ -10,9 +10,20 @@
             return {
                 sewers: [
                     {
-                        name: 'Lorem Ipsum',
-                        image: 'assets/img/not-for-production/sewers/1.png',
+                        name: 'Dominique',
+                        image1: 'assets/img/not-for-production/sewers/1.png',
+                        image2: 'assets/img/not-for-production/sewers/1.png',
                         location: 'Middelburg'
+                    }, {
+                        name: 'Joke',
+                        image1: 'assets/img/naaiers/joke-amersfoort-1.jpg',
+                        image2: 'assets/img/naaiers/joke-amersfoort-2.jpg',
+                        location: 'Amersfoort'
+                    }, {
+                        name: 'Ria',
+                        image1: 'assets/img/not-for-production/sewers/1.png',
+                        image2: 'assets/img/not-for-production/sewers/1.png',
+                        location: 'Ouddorp'
                     }
                 ]
             }
@@ -26,14 +37,16 @@
 
 <template>
     <div class="sewers">
-        <div class="sewers__intro">
-            Deze mensen zijn al hard aan het werk!
-        </div>
+        <div class="section section--full">
+            <div class="section__header">
+                Deze mensen zijn al hard aan het werk!
+            </div>
 
-        <div class="sewers__list">
-            <sewer
+            <div class="sewers__list">
+                <sewer
                     v-for="sewer in sewers"
                     :sewer="sewer"/>
+            </div>
         </div>
     </div>
 </template>
@@ -44,11 +57,6 @@
 
     .sewers {
         padding: 20px;
-
-        .sewers__list {
-            padding: 10px 10px 10px 40px!important;
-            border-left: 2px solid #000;
-        }
 
         .sewers__intro {
             margin-bottom: 20px;

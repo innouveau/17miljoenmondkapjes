@@ -10,8 +10,8 @@
 
 
 <template>
-    <div class="proof__section">
-        <div class="proof__section-head">
+    <div class="section section--full">
+        <div class="section__header">
             Landen waar ze al mondkapjes dragen
         </div>
         <ul>
@@ -49,7 +49,8 @@
                     Tsjechië
                 </div>
                 <div class="proof__sub">
-                    Verplicht per 18 maart.
+                    Verplicht per 18 maart. Zie hier over hun campagne #masks4all:<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7yx6nT-fbUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </li>
             <li>
@@ -63,9 +64,6 @@
             <li>
                 <div class="proof__country">
                     Slowakije
-                </div>
-                <div class="proof__sub">
-                    (??)
                 </div>
             </li>
             <li>
@@ -85,7 +83,10 @@
 <style lang="scss">
     @import '@/styles/variables.scss';
 
-    .proof-countries {
+    .proof {
 
+        .proof__country {
+            font-weight: 700;
+        }
     }
 </style>

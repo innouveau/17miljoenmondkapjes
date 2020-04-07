@@ -10,9 +10,9 @@
 
 
 <template>
-    <div class="proof__section">
-        <div class="proof__section-head">
-            Quotes van enkele expertsf
+    <div class="section section--full">
+        <div class="section__header">
+            Quotes van enkele experts
         </div>
         <ul>
             <li>
@@ -22,14 +22,11 @@
             </li>
             <li>
                 <b>Professor Kim Woo-joo</b><br>
-                Een vooraanstaande in het gevecht tegen COVID19 in Zuid-Korea,
-                <a href="https://twitter.com/NGIinsights/status/1243975060307599360" target="_blank">vertelt waarom iedereen een masker moet dragen</a>.
-            </li>
+                Een vooraanstaande in het gevecht tegen COVID19 in Zuid-Korea vertelt waarom iedereen een masker moet dragen:<br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gAk7aX5hksU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </li>
             <li>
                 <b>Team van het Chines Rode kruis, dat Italië komt helpen valt uit vanwege het niet massaal dragen van mondkapjes</b><br>
-                <a href="https://www.youtube.com/watch?v=BnJF6NmXT74&feature=youtu.be&t=39" target="_blank">
-                    Video
-                </a>.
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BnJF6NmXT74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
         </ul>
     </div>
@@ -39,7 +36,11 @@
 <style lang="scss">
     @import '@/styles/variables.scss';
 
-    .proof-experts {
+    .proof {
 
+
+        iframe {
+            margin-top: 20px;
+        }
     }
 </style>

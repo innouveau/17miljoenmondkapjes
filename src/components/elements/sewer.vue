@@ -16,16 +16,20 @@
 
 <template>
     <div class="sewer">
-        <div
-            :style="{'background-image': 'url(' + sewer.image + ')'}"
-            class="sewer__image">
+        <div class="sewer__images">
+            <div
+                    :style="{'background-image': 'url(' + sewer.image2 + ')'}"
+                    class="sewer__image">
+            </div>
+            <div
+                    :style="{'background-image': 'url(' + sewer.image1 + ')'}"
+                    class="sewer__image">
+            </div>
         </div>
+
         <div class="sewer__text">
             <div class="sewer__name">
-                {{sewer.name}}
-            </div>
-            <div class="sewer__location">
-                {{sewer.location}}
+                <b>{{sewer.name}}</b> {{sewer.location}}
             </div>
         </div>
     </div>
@@ -37,26 +41,42 @@
 
     .sewer {
         display: flex;
-        background: #fff;
-        //box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-        border: 1px dashed #555;
-        padding: 16px;
 
-        .sewer__image {
-            width: 120px;
-            height: 120px;
-            background-size: cover;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
+        //border: 1px dashed #555;
+        //padding: 16px;
+        margin-bottom: 10px;
+        position: relative;
+
+        .sewer__images {
+            display: flex;
+            align-items: center;
+
+            .sewer__image {
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+
+                &:first-child {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
         }
 
         .sewer__text {
+            position: absolute;
+            right: 10px;
+            top: 10px;
             width: calc(100% - 120px);
-            padding-left: 20px;
+            display: flex;
 
             .sewer__name {
-                font-size: 16px;
-                font-weight: 700;
+                font-size: 12px;
+                padding: 4px;
+                background: yellow;
             }
         }
     }

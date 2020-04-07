@@ -1,0 +1,39 @@
+.section {
+    display: flex;
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    .section__header {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    &.section--full {
+        display: block;
+
+        > div {
+            width: 100%;
+        }
+    }
+
+    &:not(.section--full) {
+
+        > div {
+            width: 50%;
+
+            &:first-child {
+                padding-right: 10px;
+            }
+
+            &:last-child {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}

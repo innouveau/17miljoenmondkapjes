@@ -11,16 +11,29 @@
 
 <template>
     <div class="pagewrap">
-        <div class="order">
-            <p>
-                Bestellen.
-            </p>
-            <p>
-                Een financiele bijdrage is op vrijwillige basis.
-            </p>
-            <p>
-                De financien zullen worden beheerd door een notaris.
-            </p>
+        <div class="content">
+            <div class="order">
+                <div class="section section--full">
+                    <div class="section__header">
+                        Bestellen
+                    </div>
+                    <p>
+                        Bestellen is nog niet mogelijk.
+                    </p>
+                    <p>
+                        Ons uitgangspunten zijn:
+
+                    </p>
+                    <ul>
+                        <li>
+                            Betaling is vrijwillig
+                        </li>
+                        <li>
+                            Betaling gaat via een rekening beheerd door een notaris
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </template>

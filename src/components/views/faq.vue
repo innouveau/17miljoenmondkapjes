@@ -58,7 +58,8 @@
                         We gaan hier nog in detail over beslissen. Het idee is vooralsnog:<br>
                         Serverkosten om deze website draaiende te houden, dan materiaalonkosten.
                         Wat overblijft kan naar een (nader te bepalen) goed doel (in de gezondheidssectie).<br>
-                        Professionals die meewerken aan dit project doen dit allen op vrijwillige basis.
+                        Professionals die meewerken aan dit project doen dit allen op vrijwillige basis.<br>
+                        Al het geld gaat via een notaris.
                     </div>
                 </div>
 
@@ -107,10 +108,14 @@
     .faq {
 
         .faq__set {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            background: #ddd;
+            padding: 20px;
 
             .faq__question {
-                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+                font-size: 20px;
+                margin-bottom: 4px;
             }
 
             .faq__answer {

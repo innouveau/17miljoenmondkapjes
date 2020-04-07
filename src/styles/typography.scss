@@ -16,3 +16,22 @@ h2 {
 a {
     color: #000;
 }
+
+a.super-link {
+    padding: 10px;
+    background: orange;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+
+    &:hover {
+        background: #000;
+    }
+}
+
+.highlight {
+    border-bottom: 3px solid #BC4087;
+    padding-bottom: 1px;
+    //color: #fff;
+}

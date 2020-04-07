@@ -9,7 +9,11 @@
             identity
         },
         props: {},
-        computed: {},
+        computed: {
+            isHome() {
+                return this.$route.name === 'home';
+            }
+        },
         methods: {}
     }
 </script>
@@ -20,14 +24,18 @@
         <div class="header">
             <div class="header__top">
                 <identity/>
-                <div class="header__text">
+                <div
+                    v-if="isHome"
+                    class="header__text">
                     <p>
-                        <b>Handen wassen</b>, <b>afstand houden</b> en vooral zoveel mogelijk
-                        <b>thuis blijven</b> - we doen het inmiddels allemaal.
+                        <span class="highlight">Handen wassen</span>,
+                        <span  class="highlight">afstand houden</span> en vooral zoveel mogelijk
+                        <span  class="highlight">thuis blijven</span> - we doen het inmiddels allemaal.
                     </p>
                     <p>
                         Maar er is nog meer wat je kunt doen en het is heel makkelijk:
-                        <b>een mondkapje dragen</b>. Hiermee bescherm je jezelf, maar ook
+                        <span  class="highlight">een mondkapje dragen</span>.
+                        Hiermee bescherm je jezelf, maar ook
                         anderen. Want ook als je geen klachten hebt, kun jij toch het
                         corona-virus al bij je dragen. Met een mondkapje maak je de
                         kans dat je iemand anders besmet een heel stuk kleiner.
@@ -47,18 +55,16 @@
         margin-bottom: 40px;
 
         .header__top {
+            display: flex;
 
             .identity {
-                width: 700px;
+                width: 512px;
             }
 
             .header__text {
-                width: 100%;
+                width: calc(100% - 512px);
                 font-size: 18px;
-
-                b {
-                    color: #BC4087;
-                }
+                padding-left: 20px;
 
                 p {
 

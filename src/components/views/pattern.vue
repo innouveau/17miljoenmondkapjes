@@ -4,27 +4,33 @@
         components: {},
         props: {},
         computed: {},
-        methods: {},
-        mounted() {
-            console.log('hello pattern');
-        }
+        methods: {}
     }
 </script>
 
 
 <template>
     <div class="pagewrap">
-        <div class="pattern">
-            <a
-                target="_blank"
-                href="https://www.uza.be/mondmaskers?fbclid=IwAR3XRm5Ml1ZgYQw6V1ZD6znHlqWtWCdMTiEdjtC5KPgRxr9X9ApxYtHNR9c">
-                Download het patroon
-            </a><br>
-            Video met aanpassing op bovenstaand patroon,
-            <a
-                target="_blank"
-                href="https://www.youtube.com/watch?v=YUVp2kDkMiE&fbclid=IwAR06gcTKqWTWgp1KsV5RK25UwXdRcsHxTNYHsMzx1WZJvTOtg66xG9u-m4Y&app=desktop">
-                bekijk</a>.
+        <div class="content">
+            <div class="pattern">
+                <div class="section section--full">
+                    <div class="section__header">
+                        Download het patroon
+                    </div>
+                    <a
+                        target="_blank"
+                        class="super-link"
+                        href="https://maakjemondkapje.online/wp-content/uploads/2020/04/LMV_WB-mondmasker-3.pdf">
+                        Download patroon en werkwijze
+                    </a><br><br>
+                    <i>Met dank aan alle informatie gevonden op <a href="https://maakjemondkapje.online/">maakjemondkapje</a></i>
+                </div>
+                <div class="section section--full">
+                    <div class="section__header">
+                        Video met instructie
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6RZYAY6rdVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            </div>
         </div>
     </div>
 </template>
