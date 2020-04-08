@@ -12,24 +12,17 @@
 
     &.section--full {
         display: block;
-
-        > div {
-            width: 100%;
-        }
     }
 
-    &:not(.section--full) {
+    .section__50 {
+        width: 50%;
 
-        > div {
-            width: 50%;
+        &:first-child {
+            padding-right: 10px;
+        }
 
-            &:first-child {
-                padding-right: 10px;
-            }
-
-            &:last-child {
-                padding-left: 10px;
-            }
+        &:last-child {
+            padding-left: 10px;
         }
     }
 

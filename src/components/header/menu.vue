@@ -13,11 +13,11 @@
     <div class="menu">
         <router-link
             :to="{name: 'pattern'}">
-            Patroon
+            Download patroon
         </router-link>
         <router-link
                 :to="{name: 'instructions'}">
-            Instructies
+            Veilig dragen
         </router-link>
         <router-link
                 :to="{name: 'proof'}">

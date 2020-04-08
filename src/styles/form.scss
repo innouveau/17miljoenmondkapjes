@@ -1,0 +1,109 @@
+.form {
+    padding: 20px;
+    background: #ddd;
+    width: 750px;
+    max-width: 100%;
+    color: #fff;
+
+    .form__header {
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .form__content {
+        margin-top: 20px;
+
+        .form__section {
+            border-bottom: 1px solid #fff;
+            padding: 10px 0;
+
+            .form__row {
+                margin-bottom: 10px;
+
+                align-items: center;
+
+                &.form__row--multiple {
+                    display: flex;
+
+                    input {
+
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                input {
+                    background: #fff;
+                    border: transparent;
+                    padding: 10px;
+                    font-family: "Open Sans", sans-serif;
+                    width: 100%;
+                    font-size: 16px;
+
+                    &.form-input--75 {
+                        width: 75%;
+                    }
+
+                    &.form-input--25 {
+                        width: 25%;
+                    }
+
+                    &.form-input--50 {
+                        width: 50%;
+                    }
+
+                    &[type=checkbox] {
+                        width: auto;
+                    }
+                }
+
+                &.form__row--footer {
+                    margin: 10px 0;
+                    justify-content: flex-end;
+                    display: flex;
+                }
+
+                .form__button {
+                    border-radius: 5px;
+                    height: 36px;
+                    padding: 12px;
+                    display: flex;
+                    align-items: center;
+                    color: #000;
+                    background: orange;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: opacity 0.5s ease;
+
+                    &:hover {
+                        background: #000;
+                        color: #fff;
+                    }
+
+                    &.form__button--inactive {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+
+            &.form__section--white {
+                background: #fff;
+                color: #000;
+                border-bottom: 1px solid #000;
+                padding: 10px;
+
+                input {
+                    background: #ddd;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

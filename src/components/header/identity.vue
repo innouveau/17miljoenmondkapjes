@@ -1,32 +1,14 @@
 <script>
+    import patternMixin from '@/mixins/pattern-mixin';
+
     export default {
         name: 'identity',
         components: {},
+        mixins: [patternMixin],
         props: {},
-        data() {
-            return {
-                i: 1,
-                l: 12
-            }
-        },
-        computed: {
-            pattern() {
-                return 'assets/img/patterns/' + this.i + '.png';
-            }
-        },
-        methods: {
-            next() {
-                this.i++;
-                if (this.i > this.l) {
-                    this.i = 1;
-                }
-            }
-        },
-        mounted() {
-            setInterval(() => {
-                this.next();
-            }, 2000)
-        }
+        computed: {},
+        methods: {},
+        mounted() {}
     }
 </script>
 

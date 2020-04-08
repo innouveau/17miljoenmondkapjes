@@ -1,9 +1,11 @@
 <script>
     import vHeader from "@/components/header/header";
+    import modal from "./components/communication/modal";
 
     export default {
         name: 'app',
         components: {
+            modal,
             vHeader
         },
         props: {},
@@ -18,9 +20,11 @@
         <v-header/>
         <router-view/>
 
+        <modal/>
+
         <div class="popup">
             We zijn hard bezig 17miljoenmondkapjes.nl uit de grond aan het stampen.<br>
-            Hopelijk zijn we over 48 uur klaar om (echt) live te gaan.
+            Hopelijk zijn we over 24 uur klaar om (echt) live te gaan.
         </div>
     </div>
 </template>

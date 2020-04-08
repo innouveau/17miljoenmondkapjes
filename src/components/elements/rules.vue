@@ -17,7 +17,7 @@
             </div>
             <div class="rule__text">
                 <div class="rule__title">
-                    Bijf 1.5m afstand houden!
+                    Blijf 1.5m afstand houden!
                 </div>
                 <div class="rule__description">
                     Dit is nog steeds het belangrijkste
@@ -33,7 +33,7 @@
             </div>
             <div class="rule__text">
                 <div class="rule__title">
-                    Bijf je handen wassen!
+                    Blijf je handen wassen!
                 </div>
                 <div class="rule__description">
                     Juíst ook als je een
@@ -67,6 +67,9 @@
 
     .rules {
         padding: 20px;
+        width: 400px!important;
+        max-width: 100%;
+        margin: 0 auto;
 
         .rule {
             display: flex;
@@ -74,7 +77,7 @@
             padding: 20px;
             margin-bottom: 20px;
             color: #000;
-            background: #ddd;
+            background: #0ac2ff;
 
             .rule__nr {
                 font-size: 80px;

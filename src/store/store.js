@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 import ui from './modules/ui';
+import modal from './modules/modal';
 
 const state = {
     dataLoaded: false
@@ -18,7 +19,7 @@ export default new Vuex.Store({
     mutations,
     actions: {},
     modules: {
-        ui
+        ui, modal
     }
 
 })

@@ -1,11 +1,13 @@
 <script>
     import rules from "@/components/elements/rules";
     import sewers from "@/components/elements/sewers";
-    import SignUp from "../elements/sign-up/sign-up";
+    import SignUp from "@/components/elements/sign-up/sign-up";
+    import formSewer from "@/components/elements/sign-up/forms/form-sewer";
 
     export default {
         name: 'home',
         components: {
+            formSewer,
             SignUp,
             sewers,
             rules
@@ -21,7 +23,7 @@
     <div class="pagewrap">
         <div class="home page">
             <div class="section">
-                <div class="home__intro">
+                <div class="section__50 home__intro">
                     <p>
                         Helaas zijn mondkapjes schaars en moeten ze (natuurlijk) als eerste naar zorgpersoneel, maar het goede nieuws is:
                     </p>
@@ -40,11 +42,15 @@
                         <span  class="highlight">17 miljoen mondkapjes</span>, doe je mee?
                     </p>
                 </div>
-                <rules/>
-<!--               <sewers/>-->
+                <sign-up/>
+
+               <sewers/>
             </div>
             <div class="section section--full">
-                <sign-up/>
+                <rules/>
+            </div>
+            <div class="section section--full">
+                <form-sewer/>
             </div>
         </div>
     </div>

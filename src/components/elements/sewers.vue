@@ -11,19 +11,14 @@
                 sewers: [
                     {
                         name: 'Dominique',
-                        image1: 'assets/img/not-for-production/sewers/1.png',
-                        image2: 'assets/img/not-for-production/sewers/1.png',
+                        image1: 'assets/img/naaiers/dominique-middelburg-1.jpg',
+                        image2: 'assets/img/naaiers/dominique-middelburg-2.jpg',
                         location: 'Middelburg'
                     }, {
                         name: 'Joke',
                         image1: 'assets/img/naaiers/joke-amersfoort-1.jpg',
                         image2: 'assets/img/naaiers/joke-amersfoort-2.jpg',
                         location: 'Amersfoort'
-                    }, {
-                        name: 'Ria',
-                        image1: 'assets/img/not-for-production/sewers/1.png',
-                        image2: 'assets/img/not-for-production/sewers/1.png',
-                        location: 'Ouddorp'
                     }
                 ]
             }

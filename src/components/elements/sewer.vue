@@ -29,7 +29,12 @@
 
         <div class="sewer__text">
             <div class="sewer__name">
-                <b>{{sewer.name}}</b> {{sewer.location}}
+                {{sewer.name}}
+            </div>
+            <div class="sewer__location">
+                <div>
+                    <img src="assets/img/tools/pin.svg"> {{sewer.location}}
+                </div>
             </div>
         </div>
     </div>
@@ -67,16 +72,37 @@
         }
 
         .sewer__text {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            width: calc(100% - 120px);
-            display: flex;
+
 
             .sewer__name {
                 font-size: 12px;
                 padding: 4px;
                 background: yellow;
+                font-weight: 700;
+                display: inline-block;
+                position: absolute;
+                left: 90px;
+                top: 10px;
+            }
+
+            .sewer__location {
+                display: inline-block;
+                align-items: center;
+                padding: 4px;
+                background: #fff;
+                position: absolute;
+                left: 90px;
+                top: 40px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                img {
+                    width: 18px;
+                    margin-right: 4px;
+                }
             }
         }
     }
