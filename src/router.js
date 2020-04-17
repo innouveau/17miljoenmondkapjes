@@ -8,6 +8,8 @@ import order from '@/components/views/order';
 import proof from '@/components/views/proof/proof';
 import faq from '@/components/views/faq';
 import privacy from '@/components/views/privacy';
+import confirmationSewer from '@/components/views/confirmations/confirmation-sewer';
+import map from '@/components/views/map/map';
 
 const routes = [
     {
@@ -38,6 +40,14 @@ const routes = [
         path: "/privacy-verklaring",
         name: "privacy",
         component: privacy
+    }, {
+        path: "/bedankt-voor-aanmelding-naaier",
+        name: "confirmation-sewer",
+        component: confirmationSewer
+    }, {
+        path: "/kaart",
+        name: "map",
+        component: map
     }
 ];
 

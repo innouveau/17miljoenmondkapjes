@@ -1,0 +1,20 @@
+.confirmation {
+    max-width: 100%;
+    width: 500px;
+
+    .confirmation__section {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+
+        p {
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}

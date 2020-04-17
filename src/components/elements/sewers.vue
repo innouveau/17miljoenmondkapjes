@@ -34,7 +34,7 @@
     <div class="sewers">
         <div class="section section--full">
             <div class="section__header">
-                Deze mensen zijn al hard aan het werk!
+                Deze mensen zijn al aan de slag!
             </div>
 
             <div class="sewers__list">

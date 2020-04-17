@@ -18,7 +18,7 @@
                         Bestellen
                     </div>
                     <p>
-                        Bestellen is nog niet mogelijk.
+                        Bestellen is nog niet mogelijk. Houd de website in de gaten voor updates.
                     </p>
                     <p>
                         Ons uitgangspunten zijn:

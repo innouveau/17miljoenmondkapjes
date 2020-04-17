@@ -24,26 +24,8 @@
         <div class="header">
             <div class="header__top">
                 <identity/>
-                <div
-                    v-if="isHome"
-                    class="header__text">
-                    <p>
-                        <span class="highlight">Handen wassen</span>,
-                        <span  class="highlight">afstand houden</span> en vooral zoveel mogelijk
-                        <span  class="highlight">thuis blijven</span> - we doen het inmiddels allemaal.
-                    </p>
-                    <p>
-                        Maar er is nog meer wat je kunt doen en het is heel makkelijk:
-                        <span  class="highlight">een mondkapje dragen</span>.
-                        Hiermee bescherm je jezelf, maar ook
-                        anderen. Want ook als je geen klachten hebt, kun jij toch het
-                        corona-virus al bij je dragen. Met een mondkapje maak je de
-                        kans dat je iemand anders besmet een heel stuk kleiner.
-                    </p>
-                </div>
             </div>
         </div>
-        <v-menu/>
     </div>
 </template>
 
@@ -59,6 +41,7 @@
 
             .identity {
                 width: 512px;
+                max-width: 100%;
             }
 
             .header__text {
@@ -75,6 +58,29 @@
             }
         }
 
+        @include tablet() {
 
+            .header__top {
+                display: block;
+
+                .header__text {
+                    width: 100%;
+                    padding: 0;
+                }
+
+            }
+        }
+
+        @include mobile() {
+
+
+            .header__top {
+
+                .header__text {
+                    display: none;
+                }
+
+            }
+        }
     }
 </style>

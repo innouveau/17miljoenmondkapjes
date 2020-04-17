@@ -69,7 +69,6 @@
         padding: 20px;
         width: 400px!important;
         max-width: 100%;
-        margin: 0 auto;
 
         .rule {
             display: flex;

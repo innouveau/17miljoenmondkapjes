@@ -39,7 +39,7 @@
             submit() {
                 if (this.isComplete) {
                     api.register(this.sewer).then(()=>{
-                        this.$store.commit('modal/set', {message: 'Bedankt voor je aanmelding!', warning: false});
+                        this.$router.push({name: 'confirmation-sewer'});
                     });
                 } else {
                     if (!this.agreesWithPrivacy) {
@@ -60,7 +60,6 @@
     <div
         :style="{'background-image': 'url(' + background + ')'}"
         class="form-sewer form">
-        <a name="form-sewer"></a>
         <div class="form__header">
             Ja, ik wil helpen door mondkapjes te naaien!
         </div>

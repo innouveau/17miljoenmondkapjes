@@ -1,11 +1,9 @@
 <script>
     import vHeader from "@/components/header/header";
-    import modal from "./components/communication/modal";
 
     export default {
         name: 'app',
         components: {
-            modal,
             vHeader
         },
         props: {},
@@ -18,25 +16,27 @@
 <template>
     <div class="app">
         <v-header/>
-        <router-view/>
-
-        <modal/>
-
-        <div class="popup">
-            We zijn hard bezig 17miljoenmondkapjes.nl uit de grond aan het stampen.<br>
-            Hopelijk zijn we over 24 uur klaar om (echt) live te gaan.
+        <div class="pagewrap">
+            <div class="content">
+                Wij ondersteunen het initiatief
+                <a href="https://www.mondkapjesmakennederland.nl">www.mondkapjesmakennederland.nl</a>.
+            </div>
         </div>
     </div>
 </template>
 
 
 <style lang="scss">
-    @import '@/styles/index.scss';
     @import '@/styles/variables.scss';
+    @import '@/styles/index.scss';
 
     .app {
-        position: relative;
-        margin-top: 80px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
 
         .popup {
             position: fixed;

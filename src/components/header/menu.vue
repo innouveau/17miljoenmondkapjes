@@ -12,6 +12,10 @@
 <template>
     <div class="menu">
         <router-link
+                :to="{name: 'home'}">
+            Home
+        </router-link>
+        <router-link
             :to="{name: 'pattern'}">
             Download patroon
         </router-link>
@@ -25,7 +29,7 @@
         </router-link>
         <router-link
                 :to="{name: 'faq'}">
-            Vragen
+            Overige vragen
         </router-link>
 
         <router-link
@@ -45,6 +49,7 @@
         border-bottom: 1px solid #ddd;
         padding: 20px 0;
         display: flex;
+        align-items: center;
 
         a {
             text-decoration: none;
@@ -64,6 +69,21 @@
                 background: orange;
                 border-radius: 2px;
                 margin-left: auto;
+            }
+        }
+
+        @include tablet() {
+
+            a {
+                margin: 0 10px;
+            }
+        }
+
+        @include mobile() {
+            flex-wrap: wrap;
+
+            a {
+                margin-bottom: 8px;
             }
         }
     }

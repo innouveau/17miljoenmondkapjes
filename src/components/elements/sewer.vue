@@ -8,8 +8,15 @@
                 required: true
             }
         },
-        computed: {},
-        methods: {}
+        computed: {
+
+        },
+        methods: {
+            getRotation() {
+                let range = 15;
+                return Math.random() * range - (range / 2);
+            }
+        }
     }
 </script>
 
@@ -18,11 +25,11 @@
     <div class="sewer">
         <div class="sewer__images">
             <div
-                    :style="{'background-image': 'url(' + sewer.image2 + ')'}"
+                    :style="{'background-image': 'url(' + sewer.image2 + ')', 'transform': 'rotate(' + getRotation() + 'deg)'}"
                     class="sewer__image">
             </div>
             <div
-                    :style="{'background-image': 'url(' + sewer.image1 + ')'}"
+                    :style="{'background-image': 'url(' + sewer.image1 + ')', 'transform': 'rotate(' + getRotation() + 'deg)'}"
                     class="sewer__image">
             </div>
         </div>
@@ -49,7 +56,7 @@
 
         //border: 1px dashed #555;
         //padding: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         position: relative;
 
         .sewer__images {

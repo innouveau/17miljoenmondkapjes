@@ -1,4 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
 
     .pagewrap {
         width: 1024px;
@@ -8,5 +20,14 @@ body {
         .content {
             padding-top: 40px;
         }
+
+        @include tablet() {
+            width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    iframe {
+        max-width: 100%;
     }
 }

@@ -55,6 +55,29 @@
             }
         }
 
+        @include tablet() {
+            margin: 0 auto 20px auto;
+        }
 
+        @include mobile() {
+
+            a {
+
+                .identity__img-pattern {
+                    left: 189px;
+                    top: 51px;
+                    width: 85px;
+                    height: 44px;
+                }
+
+                .identity__img-main {
+                    width: 350px;
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                }
+            }
+        }
     }
 </style>

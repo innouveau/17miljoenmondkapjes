@@ -14,7 +14,7 @@
 
 
 <template>
-    <div class="sign-up section__50">
+    <div class="sign-up">
         <sign-up-sewer-button/>
     </div>
 </template>
@@ -35,6 +35,11 @@
             font-family: 'Fredoka One', sans-serif;
             cursor: pointer;
             box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
 
             .sing-up-button__text {
                 text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
@@ -46,6 +51,10 @@
                    color: #000
                 }
             }
+        }
+
+        @include tablet() {
+            padding: 0;
         }
     }
 </style>
